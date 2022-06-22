@@ -1,0 +1,65 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Blaka+Hollow&family=Pacifico&display=swap');
+
+input{
+    margin-bottom: 10px;
+}
+
+textarea{
+  resize: none;
+}
+h2{
+  font-family: 'Pacifico', cursive;
+}
+
+h1, h3{
+  font-family: 'Blaka Hollow', cursive;
+}
+
+
+
+.gira:hover{
+    animation-name: spin;
+    animation-duration: 250ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+  }
+  
+  @keyframes spin {
+      from {
+          transform:rotate(360deg);
+      }
+      to {
+          transform:rotate(0deg);
+      }
+  }
+
+
+
+
+/*coloca url da imagem que fica no fundo
+  body {
+    background-image: url('');
+  }*/
+
+body{
+  background-size: 100vw 100vh;
+  
+  background-image: url('https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?w=2000');
+}
+  /*body{
+      background-image: linear-gradient(rgb(251, 255, 0), rgb(182, 250, 74), rgb(50, 243, 82));
+
+  background-color: burlywood;
+  }*/
+
+  .resize {
+    width: 200px;
+    height: auto;
+}
+
+.logoff {
+  position: fixed;
+  cursor: pointer;
+  right: 0;
+}
